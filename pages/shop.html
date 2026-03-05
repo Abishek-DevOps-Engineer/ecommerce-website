@@ -7,7 +7,116 @@
   <link rel="stylesheet" href="../css/style.css" />
 
   <!-- Add any styles specific to THIS page below -->
+   
   <style>
+    /* =========================
+   
+========================= */
+
+
+.sale-banner {
+  text-align: center;
+  margin: 40px 0;
+  padding: 35px 20px;
+  border-radius: 12px;
+  color: #fff;
+
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.sale-banner h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.sale-banner p {
+  font-size: 17px;
+  opacity: 0.95;
+}
+    /* =========================
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 17px;
+  color: #222;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.price {
+  color: #e63946;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0 12px;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e63946;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.product-card .btn {
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Responsive (safe) */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
 </head>
@@ -44,7 +153,68 @@
   ========================================= -->
   <main>
 
-    <!-- Add your shop page content below -->
+    <div class="sale-banner">
+   <h2>🔥 YEAR END SALE 🔥</h2>
+   <p>Flat 50% Offer On Selected Products</p>
+</div>
+
+<div class="product-grid">
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/hoodie.jpg" alt="Hoodie">
+    <h3>Premium Hoodie</h3>
+    <p class="old-price">₹1999</p>
+    <p class="price">₹999</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/shoes.jpg" alt="Shoes">
+    <h3>Running Shoes</h3>
+    <p class="old-price">₹3999</p>
+    <p class="price">₹1999</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/laptop.jpg" alt="Laptop">
+    <h3>Laptop</h3>
+    <p class="old-price">₹99999</p>
+    <p class="price">₹49999</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/smartphone.jpg" alt="Smartphone">
+    <h3>Smartphone</h3>
+    <p class="old-price">₹39999</p>
+    <p class="price">₹19999</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/headphones.jpg" alt="Headphones">
+    <h3>Wireless Headphones</h3>
+    <p class="old-price">₹4999</p>
+    <p class="price">₹2499</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product-card special-offer">
+    <div class="badge">50% OFF</div>
+    <img src="../images/jacket.jpg" alt="Jacket">
+    <h3>Winter Jacket</h3>
+    <p class="old-price">₹5999</p>
+    <p class="price">₹2999</p>
+    <a href="cart.html" class="btn">Add to Cart</a>
+  </div>
+
+</div>
 
   </main>
   <!-- ========================================
